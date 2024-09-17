@@ -42,3 +42,27 @@ try {
 } catch (_) {
   console.log("Story 2 - Scenario 3 passed");
 }
+
+//story 3 - scenario 1
+try {
+  bank.withdraw("352656", 50);
+  console.log("Story 3 - Scenario 1 passed");
+} catch (_) {
+  console.log("Story 3 - Scenario 1 failed");
+}
+
+//story 3 - scenario 2
+try {
+  bank.withdraw("352656", 100);
+  console.log("Story 3 - Scenario 2 failed");
+} catch (_) {
+  console.log("Story 3 - Scenario 2 passed");
+}
+
+//story 3 - scenario 3
+try {
+  bank.withdraw("1111111", 50);
+  console.log("Story 3 - Scenario 3 failed");
+} catch (_) {
+  console.log("Story 3 - Scenario 3 passed");
+}

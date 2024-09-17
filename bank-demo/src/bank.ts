@@ -88,4 +88,17 @@ export default class Bank {
     account.balance -= amount;
     return account;
   }
+
+  /**
+   * Method to check balance of a bank account
+   * @param {string} accountNumber -- Account number to check balance
+   * @returns -- Balance of the account
+   */
+  public checkBalance(accountNumber: string): number {
+    const account = this.findAccount(accountNumber);
+    if (!account) {
+      throw new Error("Account does not exist");
+    }
+    return account.balance;
+  }
 }

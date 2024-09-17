@@ -66,3 +66,19 @@ try {
 } catch (_) {
   console.log("Story 3 - Scenario 3 passed");
 }
+
+//story 4 - scenario 1
+try {
+  bank.checkBalance("352656");
+  console.log("Story 4 - Scenario 1 passed");
+} catch (_) {
+  console.log("Story 4 - Scenario 1 failed");
+}
+
+//story 4 - scenario 2
+try {
+  bank.checkBalance("1111111");
+  console.log("Story 4 - Scenario 2 failed");
+} catch (_) {
+  console.log("Story 4 - Scenario 2 passed");
+}
